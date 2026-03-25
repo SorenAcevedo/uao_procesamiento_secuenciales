@@ -10,7 +10,6 @@
 **Estudiantes:**
 - Soren Fabricius Acevedo (22500566)
 - Ricardo Muñoz Bocanegra (22500246)
-- Nicolás Lozano Mazuera (22500565)
 - Juan José Bonilla Pinzón (22502052)
 - Juan Manuel García Ortiz (22502268)
 
