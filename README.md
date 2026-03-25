@@ -1,11 +1,11 @@
 # Whisper — Reconocimiento de Voz mediante Supervisión Débil a Gran Escala
 
 ### Universidad Autónoma de Occidente
-**Facultad de Ingeniería y Ciencias Básicas**
+**Facultad de Ingeniería y Ciencias Básicas -**
 **Maestría en Inteligencia Artificial y Ciencia de Datos**
 
 **Curso:** Procesamiento de Datos Secuenciales con Deep Learning
-**Profesor:** Natali Johana Velandia Fajardo
+**Profesora:** Natali Johana Velandia Fajardo
 
 **Estudiantes:**
 - Soren Fabricius Acevedo (22500566)
@@ -17,7 +17,7 @@
 
 ## 1. Resumen (Abstract)
 
-Este proyecto implementa y analiza el modelo **Whisper** de OpenAI, un sistema de reconocimiento automático de voz (ASR) basado en la arquitectura Transformer encoder-decoder. Se evalúan tres variantes del modelo — **tiny** (39M parámetros), **medium** (769M) y **turbo** (809M) — sobre un mismo audio, comparando su precisión de transcripción y rendimiento. Además, se desarrolla una aplicación interactiva en **Streamlit** que visualiza paso a paso el flujo de procesamiento de la arquitectura (desde el espectrograma de Mel hasta la generación autoregresiva de texto), permitiendo observar en tiempo real cómo cada componente del Transformer interviene durante la inferencia. Los resultados muestran las diferencias en calidad de transcripción entre las distintas escalas del modelo y evidencian cómo la arquitectura encoder-decoder procesa señales de audio para producir texto.
+Este proyecto implementa y analiza el modelo **Whisper** de OpenAI, un sistema de reconocimiento automático de voz (ASR) basado en la arquitectura Transformer encoder-decoder. Se evalúan tres variantes del modelo — **tiny** (39M parámetros), **base** (74M) y **small** (244M) — sobre un mismo audio, comparando su precisión de transcripción y rendimiento. Además, se desarrolla una aplicación interactiva en **Streamlit** que visualiza paso a paso el flujo de procesamiento de la arquitectura (desde el espectrograma de Mel hasta la generación autoregresiva de texto), permitiendo observar en tiempo real cómo cada componente del Transformer interviene durante la inferencia. Los resultados muestran las diferencias en calidad de transcripción entre las distintas escalas del modelo y evidencian cómo la arquitectura encoder-decoder procesa señales de audio para producir texto.
 
 ---
 
@@ -37,7 +37,7 @@ Comprender la arquitectura Transformer aplicada a datos secuenciales de audio, e
 
 ### Objetivo
 
-Implementar el modelo Whisper en sus variantes tiny, medium y turbo, comparar su desempeño en tareas de transcripción, y desarrollar una aplicación Streamlit que visualice la arquitectura completa del modelo durante el procesamiento de audio en tiempo real.
+Implementar el modelo Whisper en sus variantes tiny, base y small, comparar su desempeño en tareas de transcripción, y desarrollar una aplicación Streamlit que visualice la arquitectura completa del modelo durante el procesamiento de audio en tiempo real.
 
 ---
 
