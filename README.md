@@ -182,7 +182,7 @@ La aplicación incluye tres pestañas:
 
 Se evaluaron los tres modelos sobre el mismo archivo de audio, observando diferencias en:
 
-- **Precisión de transcripción:** El modelo tiny produce transcripciones con errores frecuentes, mientras que medium y turbo logran resultados significativamente más precisos.
+- **Precisión de transcripción:** El modelo tiny produce transcripciones con errores frecuentes, mientras que base y small logran resultados significativamente más precisos.
 - **Detección de idioma:** Los tres modelos identifican correctamente el idioma del audio, con mayor confianza en modelos más grandes.
 - **Tiempo de inferencia:** El modelo tiny es el más rápido. Turbo ofrece un balance óptimo entre velocidad y calidad gracias a su decoder reducido de 4 capas.
 
