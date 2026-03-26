@@ -101,10 +101,9 @@ Se utilizan los pesos preentrenados oficiales de OpenAI descargados automáticam
 | Modelo | Parámetros | Capas Encoder | Capas Decoder | d_model | Cabezas |
 |---|---|---|---|---|---|
 | **tiny** | 39M | 4 | 4 | 384 | 6 |
-| **medium** | 769M | 24 | 24 | 1024 | 16 |
-| **turbo** | 809M | 32 | 4 | 1280 | 20 |
+| **base** | 769M | 6 | 6 | 512 | 8 |
+| **small** | 809M | 12 | 12 | 768 | 12 |
 
-El modelo **turbo** es una destilación de large-v3 que mantiene el encoder de 32 capas pero reduce el decoder de 32 a 4 capas, logrando velocidad similar a small con calidad cercana a large-v3.
 
 ### Proceso de implementación
 
@@ -128,7 +127,7 @@ apt-get install -y ffmpeg
 
 **Parte 1 — Demostración del modelo base (Notebook):**
 
-El notebook ejecuta el mismo audio con tres modelos (tiny, medium, turbo), mostrando tanto el flujo paso a paso como la llamada simplificada `transcribe()`.
+El notebook ejecuta el mismo audio con tres modelos (tiny, base, small), mostrando tanto el flujo paso a paso como la llamada simplificada `transcribe()`.
 
 **Parte 2 — Aplicación Streamlit:**
 ```bash
@@ -196,11 +195,11 @@ La aplicación Streamlit permite observar en tiempo real:
 
 ### Métricas de desempeño
 
-| Modelo | Parámetros | Velocidad relativa | Calidad de transcripción |
-|---|---|---|---|
-| tiny | 39M | Muy rápido | Limitada — errores frecuentes |
-| medium | 769M | Moderado | Alta — pocos errores |
-| turbo | 809M | Rápido | Alta — cercana a large-v3 |
+| Modelo | Parámetros |  Calidad de transcripción |
+|---|---|---|
+| tiny | 39M | Limitada — errores frecuentes |
+| base | 74M | Básica — algunos errores |
+| small | 244M | Media — menos errores|
 
 ### Limitaciones observadas
 
